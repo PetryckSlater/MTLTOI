@@ -8,7 +8,7 @@ with open('LocalText.json', encoding='utf-8') as meu_json: # File to translate
     dados = json.load(meu_json)
 
 translate_client = translate_v2.Client()
-target = 'pt'
+target = 'pt' #Linguagem de saida/ Ex: en - > pt
 
 max_batch_size = 100  # Tamanho máximo do lote (ajuste conforme necessário) / Maximum batch size (adjust as needed)
 output_list = []
